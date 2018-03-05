@@ -1,2 +1,3 @@
 GET		/										@skillstest.controllers.HomeController.index()
+GET		/stringReverse							@skillstest.controllers.HomeController.stringReverse(s: String)
 GET		/parseTimeframe							@skillstest.controllers.HomeController.parseTimeframe(timeframe: String, timeZone: String ?= "UTC")

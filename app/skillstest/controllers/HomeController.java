@@ -17,7 +17,7 @@ public class HomeController extends Controller {
 	}
 
 	public Result stringReverse(String s) {
-		// TODO implement methods in TotallyUnnecessaryStringUtils
+		// implement methods in TotallyUnnecessaryStringUtils to make this endpoint work properly
 		return status(200, TotallyUnnecessaryStringUtils.reverse(s))
 				.as("text/plain");
 	}
@@ -26,7 +26,8 @@ public class HomeController extends Controller {
 		/*
 		 * TODO implement this method OR the one that's commented out below it (not both)
 		 *
-		 * parse the timeframe and return OK with the body being something like this:
+		 * parse the timeframe, get the absolute interval relative to the present,
+		 * and then return OK with the body being something like this:
 		 * {
 		 *   "from": "2018-01-01T22:12:41.174Z",
 		 *   "to": "2018-01-02T22:12:41.174Z"
